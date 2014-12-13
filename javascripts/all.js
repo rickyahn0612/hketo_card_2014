@@ -1,3 +1,9 @@
+(function() {
+  $(function() {
+    return $("#video-container").fitVids();
+  });
+
+}).call(this);
 /*global jQuery */
 /*jshint browser:true */
 /*!
@@ -8,6 +14,7 @@
 * Released under the WTFPL license - http://sam.zoy.org/wtfpl/
 *
 */
+
 
 ;(function( $ ){
 
