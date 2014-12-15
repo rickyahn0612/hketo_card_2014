@@ -2,6 +2,12 @@ body {
   background: #006206;
 }
 
+#flashContent {
+  padding-top: 80px;
+  width: 800px;
+  margin: 0 auto;
+}
+
 #video-container {
   display: none;
 

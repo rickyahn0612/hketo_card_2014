@@ -1,7 +1,34 @@
 #flash-container
-  %h1 FLASH STUFF HERE FOR DESKTOP
--##video-container
-  -#%iframe{width: '100%', height: '100%;', :frameborder => "0", :src => "https://youtube.com/embed/7L2p30Ye2SI?autoplay=1&controls=0&showinfo=0&autohide=1" }
+  #flashContent
+    %object#hketo-15-card{:align => "middle", :classid => "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000", :height => "600", :width => "800"}
+      %param{:name => "movie", :value => "hketo-15-card.swf"}/
+      %param{:name => "quality", :value => "high"}/
+      %param{:name => "bgcolor", :value => "#ffffff"}/
+      %param{:name => "play", :value => "true"}/
+      %param{:name => "loop", :value => "true"}/
+      %param{:name => "wmode", :value => "window"}/
+      %param{:name => "scale", :value => "showall"}/
+      %param{:name => "menu", :value => "true"}/
+      %param{:name => "devicefont", :value => "false"}/
+      %param{:name => "salign", :value => ""}/
+      %param{:name => "allowScriptAccess", :value => "sameDomain"}/
+      / [if !IE]>
+      %object{:data => "hketo-15-card-final-Rev.swf", :height => "600", :type => "application/x-shockwave-flash", :width => "800"}
+        %param{:name => "movie", :value => "hketo-15-card-final-Rev.swf"}/
+        %param{:name => "quality", :value => "high"}/
+        %param{:name => "bgcolor", :value => "#ffffff"}/
+        %param{:name => "play", :value => "true"}/
+        %param{:name => "loop", :value => "true"}/
+        %param{:name => "wmode", :value => "window"}/
+        %param{:name => "scale", :value => "showall"}/
+        %param{:name => "menu", :value => "true"}/
+        %param{:name => "devicefont", :value => "false"}/
+        %param{:name => "salign", :value => ""}/
+        %param{:name => "allowScriptAccess", :value => "sameDomain"}/
+        / <![endif]
+        %a{:href => "http://www.adobe.com/go/getflash"}
+          %img{:alt => "Get Adobe Flash player", :src => "http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"}/
+        / [if !IE]>
+      / <![endif]
 #video-container{:style => "position: fixed; z-index: -99; width: 100%; height: 100%"}
-  -#= image_tag 'christmas_default_image.png'
-  %iframe{:frameborder => "0", :src => "https://youtube.com/embed/7L2p30Ye2SI/?autoplay=0&controls=0&showinfo=0&autohide=1"}
+  %iframe#video{:allowfullscreen => "", :frameborder => "0", :src => "//www.youtube.com/embed/7L2p30Ye2SI?enablejsapi=1&html5=1 "}
